@@ -66,9 +66,10 @@ main {
 	display: grid;
 	grid-template-columns: 3fr 1fr;
 	border: 1px solid green;
+	background: rgb(134, 193, 248);
 }
 .regex-heading p {
-	border: 1px solid sandybrown;
+	/* border: 1px solid sandybrown; */
 }
 .des {
 	padding-left: 1em;
@@ -97,13 +98,14 @@ input[name="regex"]:focus {
 	display: grid;
 	grid-template-rows: auto;
 	border: 1px solid red;
+	background: rgb(198, 226, 252);
 }
 .to-match-heading {
 	display: grid;
 	grid-template-columns: 3fr 1fr 1fr;
 }
 .to-match-heading p {
-	border: 1px solid sandybrown;
+	/* border: 1px solid sandybrown; */
 }
 .fun {
 	font-weight: bold;
@@ -111,8 +113,16 @@ input[name="regex"]:focus {
 textarea[name="to-match"] {
 	border: 0;
 	width: 40em;
-	height: 40em;
+	height: 20em;
 	font-weight: bold;
 	background: rgb(226, 226, 248);
+}
+textarea:focus {
+	outline: none;
+}
+.tools-heading {
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr;
+	background: rgb(198, 226, 252);
 }
 

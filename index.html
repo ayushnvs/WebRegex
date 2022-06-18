@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="script.js">
+	<script src="script.js"></script>
 	<title>Regular Expressions</title>
 </head>
 <body>
@@ -28,15 +28,25 @@
 						<p class="des">Expression</p>
 						<p class="lan">Javascript</p>
 					</section>
-					<div>\<input type="text" placeholder="Enter RegExp" name="regex">\<span class="flag">g</span></div>
+					<div>\<input type="text" placeholder="Enter RegExp" name="regex" oninput="matchingGivenRegex()">\<span class="flag">g</span></div>
 				</div>
 				<div class="string">
 					<section class="to-match-heading">
+						<p class="des">Texts</p>
+					</section>
+					<textarea class="text-content" type="text" placeholder="Enter your string here!" name="to-match"></textarea>
+				</div>
+				<div class="tools">
+					<section class="tools-heading">
 						<p class="des">Tools</p>
 						<p class="fun">Match</p>
 						<p class="fun">Replace</p>
 					</section>
-					<textarea type="text" placeholder="Enter your string here!" name="to-match"></textarea>
+					<section class="output">
+						<div class="blank">
+							<p class="out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam, aspernatur quod sint nemo pariatur sunt natus? Inventore provident suscipit qui! Dolor obcaecati, ipsum eum nam nostrum animi sed officia!</p>
+						</div>
+					</section>
 				</div>
 			</form>
 		</div>
