@@ -68,11 +68,8 @@ main {
 .regex-heading {
 	display: grid;
 	grid-template-columns: 3fr 1fr;
-	border: 1px solid green;
+	/* border: 1px solid green; */
 	background: rgb(134, 193, 248);
-}
-.regex-heading p {
-	/* border: 1px solid sandybrown; */
 }
 .des {
 	padding-left: 1em;
@@ -104,7 +101,7 @@ input[name="regex"]:focus {
 .string {
 	display: grid;
 	grid-template-rows: auto;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	background: rgb(198, 226, 252);
 }
 .to-match-heading {
