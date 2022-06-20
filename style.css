@@ -8,6 +8,7 @@ main {
 	gap: 1em;
 }
 .title-bar {
+	position: fixed;
 	/* border: 2px solid red; */
 	z-index: 1;
 	width: 100%;
@@ -15,6 +16,7 @@ main {
 	height: 4em;
 	display: grid;
 	grid-template-rows: auto;
+	background: white;
 }
 .menus {
 	/* border: 2px solid black; */
@@ -40,8 +42,9 @@ main {
 	color: blue;
 }
 .heading {
+	margin-top: 5em;
 	/* border: 2px solid green; */
-	height: 4rem;
+	height: 2rem;
 	justify-self: center;
 	/* padding-top: 4em; */
 }
@@ -117,7 +120,7 @@ input[name="regex"]:focus {
 textarea[name="to-match"] {
 	border: 0;
 	width: 40em;
-	height: 20em;
+	height: 10em;
 	font-weight: bold;
 	background: rgb(226, 226, 248);
 }
@@ -128,5 +131,27 @@ textarea:focus {
 	display: grid;
 	grid-template-columns: 3fr 1fr 1fr;
 	background: rgb(198, 226, 252);
+}
+.output {
+	margin-bottom: 5em;
+	background: rgb(226, 226, 248);
+	min-height: 4em;
+	width: 40em;
+}
+footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 1px 5px rgba(184, 183, 183, 0.8);
+	/* border:1px solid rgb(250, 4, 4); */
+	/* background: #c4c3d0; */
+	height: 4em;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.copyright {
+	justify-self: center;
+	align-self: center;
 }
 

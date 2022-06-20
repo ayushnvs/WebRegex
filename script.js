@@ -19,7 +19,7 @@ function matchingGivenRegex() {
 		document.querySelector('.blank').innerText = match
 	} else {
 		console.log("Something's wrong!!")
-		console.log(match)
+		console.log(match[0])
 	}
 }
 

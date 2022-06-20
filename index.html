@@ -5,7 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
 	<title>Regular Expressions</title>
 </head>
 <body>
@@ -28,24 +27,13 @@
 						<p class="des">Expression</p>
 						<p class="lan">Javascript</p>
 					</section>
-					<div><span>\</span><input type="text" placeholder="Enter RegExp" name="regex" value="^[A-Z](.+)\." value="^[A-Za-z\s]{3,}[\d?]+"  oninput="matchingGivenRegex()"><span>\</span><span class="flag">g</span></div>
+					<div><span>\</span><input type="text" placeholder="Enter RegExp" name="regex" value="[A-Za-z\s]+\.[^\?]*" value="^[A-Za-z\s]{3,}[\d?]+"  oninput="matchingGivenRegex()"><span>\</span><span class="flag">g</span></div>
 				</div>
 				<div class="string">
 					<section class="to-match-heading">
 						<p class="des">Texts</p>
 					</section>
-					<textarea class="text-content" type="text" placeholder="Enter your string here!" name="to-match">
-I recognize Mr. Reese, that there is a disparity between how much I know about you and how much you know about me. I know you will be trying to close that gap as quickly as possible but I should tell you, I am a really private person. - Harold Finch
-
-The world is full of obvious things which nobody by any chance ever observes. - Sherlock Holmes
-
-When you have eliminated all which is impossible, then whatever remains, however improbable, must be the truth.. - Sherlock Holmes
-
-Attachment is blinding; it lends an imaginary halo of attractiveness to the object of desire. What a person imagines he hears, and what the speaker has really implied, may be poles apart. - Swami Sri Yukteshwar Giri
-
-You should be in position and capable enough to work in Sorrow and pain as well. - SN
-
-Talk to yourself at least once in a Day.. Otherwise you may miss a meeting with an EXCELLENT person in this World. - Swami Vivekananda</textarea>
+					<textarea class="text-content" type="text" placeholder="Enter your string here!" name="to-match">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus ex architecto repellendus doloremque neque numquam mollitia repudiandae fugiat? Quae non eos velit porro ratione, facilis quibusdam iste repudiandae! Est!</textarea>
 				</div>
 				<div class="tools">
 					<section class="tools-heading">
@@ -53,6 +41,7 @@ Talk to yourself at least once in a Day.. Otherwise you may miss a meeting with 
 						<p class="fun">Match</p>
 						<p class="fun">Replace</p>
 					</section>
+					<section class="replace-text">$1\n$2</section>
 					<section class="output">
 						<div class="blank">
 							<p class="out"></p>
@@ -62,5 +51,13 @@ Talk to yourself at least once in a Day.. Otherwise you may miss a meeting with 
 			</form>
 		</div>
 	</main>
+	<footer>
+		<!-- Footer -->
+		<div class='copyright'>
+			<p>ayushnvs <i class='fas fa-copyright'></i> 2022, All rights reserved.</p>
+		</div>
+		<!-- Scripts -->	
+		<script src="script.js"></script>
+	</footer>
 </body>
 </html>
